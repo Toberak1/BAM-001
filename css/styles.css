@@ -42,11 +42,12 @@ body {
 .main__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
         "bloque1 bloque1 bloque1 aside"
-        "bloque2 bloque3 bloque3 aside"
-        "bloque4 bloque4 bloque4 aside"
+        "bloque2 bloque2 bloque3 aside"
+        "bloque4 bloque5 bloque5 aside"
+        "bloque6 bloque6 bloque6 aside"
         "footer footer footer footer";
     gap: 0.3rem;
     padding: 0.2rem;
@@ -87,6 +88,18 @@ body {
 
   .bloque4 div {
     padding: 1rem 0;
+  }
+
+  .bloque5 {
+    grid-area: bloque5;
+    background-color:cornflowerblue;
+    padding: 1rem;
+  }
+
+  .bloque6 {
+    grid-area: bloque6;
+    background-color:cornflowerblue;
+    padding: 1rem;
   }
   
   .footer {
