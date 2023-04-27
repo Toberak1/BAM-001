@@ -1,49 +1,140 @@
-/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Ysabeau', sans-serif;
-	font-weight: 500;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 500;
+    background-color: #0e0e0e;
 }
 
-/* Estilos de las cajas */
-.caja1 {
-	background-color: #f7dfc8;
-	color: #333;
-	padding: 20px;
+.header {
+    background-color: #ff9d2e;
+    padding: 20px;
 }
 
-.caja2 {
-	background-color: #d4e6f1;
-	color: #333;
-	padding: 20px;
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.caja3 {
-	background-color: #b2c8d6;
-	color: #333;
-	padding: 20px;
+.header__logo {
+    width: 50px;
 }
 
-.caja4 {
-	background-color: #79a3b1;
-	color: #202020;
-	padding: 20px;
-	text-align: center;
+.logo {
+    max-height: 70px;
 }
 
-/* Estilos de los títulos */
-h2 {
-	font-size: 28px;
-	font-weight: bold;
-	margin-top: 0;
-	margin-bottom: 10px;
+.navbar__items {
+    list-style: none;
+    display: flex;
 }
 
-/* Estilos de los párrafos */
-p {
-	font-size: 16px;
-	line-height: 1.5;
-	margin-top: 0;
-	margin-bottom: 20px;
+.navbar__item a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "bloque1 bloque1 bloque1 aside"
+        "bloque2 bloque3 bloque3 aside"
+        "bloque4 bloque4 bloque4 aside"
+        "footer footer footer footer";
+    gap: 0.3rem;
+    padding: 0.2rem;
+    height: 400px;
+}
+
+.main__container a:hover {
+    color: aqua;
+}
+
+.main__container a:visited {
+    color: brown;
+}
+
+.bloque1 {
+    grid-area: bloque1;
+    background-color:cornflowerblue;
+    padding: 1rem;
+      }
+  
+  .bloque2 {
+    grid-area: bloque2;
+    background-color:cornflowerblue;
+    padding: 1rem;
+  }
+  
+  .bloque3 {
+    grid-area: bloque3;
+    background-color:cornflowerblue;
+    padding: 1rem;
+  }
+  
+  .bloque4 {
+    grid-area: bloque4;
+    background-color:cornflowerblue;
+    padding: 1rem;
+  }
+
+  .bloque4 div {
+    padding: 1rem 0;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #7ed9f0;
+    text-align: center;
+    padding: 2rem;
+
+  }
+  
+  .aside {
+    grid-area: aside;
+    background-color: #e6f2e6;
+    padding: 1rem;
+  }
+    
+
+
+.aside ol li {
+    list-style: none;
+}
+
+.aside ul li {
+    list-style: decimal;
+    margin-left: 1.5rem;
+}
+
+.img__bloque1 {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 1rem;
+}
+
+.img__bloque2 {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+
+.tablas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablas td,
+.tablas th {
+    border: 1px solid black;
+    padding: 0.2rem
 }
